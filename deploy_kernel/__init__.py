@@ -1,0 +1,17 @@
+from .kernel import Kernel, LEASE_SECONDS, RETRY_DELAY_SECONDS, MAX_ATTEMPTS
+
+SUCCESS = "success"
+TRANSIENT_FAILURE = "transient_failure"
+PERMANENT_FAILURE = "permanent_failure"
+OUTCOMES = (SUCCESS, TRANSIENT_FAILURE, PERMANENT_FAILURE)
+
+__all__ = [
+    "Kernel",
+    "LEASE_SECONDS",
+    "RETRY_DELAY_SECONDS",
+    "MAX_ATTEMPTS",
+    "SUCCESS",
+    "TRANSIENT_FAILURE",
+    "PERMANENT_FAILURE",
+    "OUTCOMES",
+]
